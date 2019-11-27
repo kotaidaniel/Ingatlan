@@ -22,6 +22,7 @@ public class Tarsashaz {
         lista.add(g);
         return hozzaad;
     }
+    //blablabla
     
     
 }
