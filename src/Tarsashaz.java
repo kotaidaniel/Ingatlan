@@ -19,10 +19,11 @@ public class Tarsashaz {
     }
     public boolean garazsHozzaAd(Garazs g){
         boolean hozzaad = false; 
-        lista.add(g);
+        if (this.garazsSzam<this.garazsSzam) {
+            lista.add(g);
+        }
         return hozzaad;
     }
-    //blablabla
-    
+
     
 }

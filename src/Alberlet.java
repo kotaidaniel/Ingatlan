@@ -8,7 +8,14 @@ public class Alberlet extends Lakas implements Berelheto{
     
     @Override
     public boolean bekoltozik(int lakok) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        boolean bekoltozhet = false;
+        if (lakok <= 8 && (terulet/lakok)<2) {
+            bekoltozhet = true;
+            super.lakok += lakok;
+        } else {
+            bekoltozhet = false;
+        }
+        return bekoltozhet;
     }
 
     @Override
@@ -46,6 +53,11 @@ public class Alberlet extends Lakas implements Berelheto{
             foglalas = false;
         }
         return foglalas;
+    }
+
+    @Override
+    public String toString() {
+        return "Alberlet{" + "honapokSzama=" + honapokSzama + '}';
     }
     
     
